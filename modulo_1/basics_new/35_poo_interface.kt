@@ -48,3 +48,4 @@ fun main() {
 
     println(figuras[0].comparar(figuras[1]))
 }
+

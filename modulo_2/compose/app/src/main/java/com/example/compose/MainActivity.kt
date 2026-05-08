@@ -27,10 +27,13 @@ class MainActivity: ComponentActivity() {
 
                 // ◀ CAMBIA AQUÍ para probar cada paso:
                 //Paso01TextFieldScreen()
-                Paso02CardScreen()
-                // Paso03_LazyColumnScreen()
+                //Paso01SumaScreen()
+                //Paso01AreaScreen()
+                //Paso02CardScreen()
+                //Paso03LazyColumnScreen()
                 // Paso04_ScaffoldScreen()
-                // Paso05_NavBarScreen()
+                //Paso05NavBarScreen()
+                Paso01tienda()
                 // Paso06_DialogosScreen()   // ← paso activo
             }
         }
