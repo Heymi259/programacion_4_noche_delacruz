@@ -9,10 +9,3 @@ void main() {
   saludar();
   saludoconparametro("Juan");
 }
-
-void main(){
-  saludar();
-  saludoconparametro("Maria");
-  int numero = obtenerNumero();
-  print(numero);
-}

@@ -37,6 +37,7 @@ void main() {
 
   print('Lista final: $lista');
 
+  // ignore: unused_local_variable
   const colores = ['rojo', 'azul'];
 
   // ==============================
@@ -51,6 +52,7 @@ void main() {
   String? ciudad2;
 
   // Safe call
+  // ignore: dead_code
   print(ciudad2?.length);
 
   // Operador ??
@@ -64,6 +66,7 @@ void main() {
   print(ciudadSegura);
 
   // Null check
+  // ignore: unnecessary_null_comparison
   if (apellido2 != null) {
     print(apellido2.length);
   }

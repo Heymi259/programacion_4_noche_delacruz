@@ -13,5 +13,4 @@ void main() {
     print("El número es cero");
   }
 }
-Enviado
-Escribir mensaje
+

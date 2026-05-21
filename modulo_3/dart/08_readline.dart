@@ -1,4 +1,4 @@
-mport 'dart:io';
+import 'dart:io';
 
 void main() {
   print('Ingrese su nombre:');
@@ -13,4 +13,8 @@ void main() {
   double valor = double.parse(stdin.readLineSync()!);
   print('Valor: $valor');
 }
-Escribir mensaje
+late Escribir mensaje;
+
+
+class Escribir {
+}
