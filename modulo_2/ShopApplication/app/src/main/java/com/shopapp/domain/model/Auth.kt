@@ -1,18 +1,13 @@
 package com.shopapp.domain.model
 
-data class Category(
-    val id: Int,
-    val name: String,
-    val slug: String,
-    val description: String,
-    val isActive: Boolean,
-    val totalProducts: Int,
-    val createdAt: String,
+data class AuthTokens(
+    val access: String,
+    val refresh: String,
 )
 
-data class CategoryPayload(
-    val name: String,
-    val slug: String,
-    val description: String,
-    val isActive: Boolean,
+data class LoggedUser(
+    val id: Int,
+    val username: String,
+    val email: String,
+    val isStaff: Boolean,
 )
