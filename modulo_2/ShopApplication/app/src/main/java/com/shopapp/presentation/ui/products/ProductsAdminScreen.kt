@@ -197,6 +197,7 @@ fun ProductsAdminScreen(
                 showForm   = false
                 editTarget = null
                 viewModel.resetFormState()
+                viewModel.load()
             },
         )
     }
