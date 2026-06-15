@@ -1,5 +1,5 @@
 // presentation/ui/admin/AdminScaffold.kt
-package com.shopapp.presentation.ui.admin
+package com.shopapp.presentation.ui.admin.categories
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -10,6 +10,8 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -148,7 +150,7 @@ private fun AdminDrawerContent(
                     modifier         = Modifier
                         .size(40.dp)
                         .background(
-                            brush = androidx.compose.ui.graphics.Brush.linearGradient(
+                            brush = Brush.linearGradient(
                                 listOf(Accent, AccentLight)
                             ),
                             shape = CircleShape,
@@ -211,7 +213,7 @@ private fun AdminDrawerContent(
                 onClick  = { onNavClick(item.route) },
                 colors   = NavigationDrawerItemDefaults.colors(
                     selectedContainerColor   = Accent.copy(alpha = 0.12f),
-                    unselectedContainerColor = androidx.compose.ui.graphics.Color.Transparent,
+                    unselectedContainerColor = Color.Transparent,
                 ),
                 modifier = Modifier.padding(horizontal = 12.dp, vertical = 2.dp),
             )
@@ -229,7 +231,7 @@ private fun AdminDrawerContent(
             selected = false,
             onClick  = onLogout,
             colors   = NavigationDrawerItemDefaults.colors(
-                unselectedContainerColor = androidx.compose.ui.graphics.Color.Transparent,
+                unselectedContainerColor = Color.Transparent,
             ),
             modifier = Modifier.padding(horizontal = 12.dp, vertical = 8.dp),
         )

@@ -1,4 +1,4 @@
-import 'dart:io';
+.dartimport 'dart:io';
 
 // async → la función retorna Future<String>
 Future<String> obtenerIpPublica() async {
