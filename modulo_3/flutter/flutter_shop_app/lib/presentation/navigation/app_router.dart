@@ -17,6 +17,7 @@ import 'public_shell.dart';
 import '../screens/orders/orders_screen.dart';
 import '../screens/orders/order_detail_screen.dart';
 import '../screens/auth/profile_screen.dart';
+import '../screens/admin/categories_admin_screen.dart';
 
 class _PlaceholderScreen extends ConsumerWidget {
   final String title;
@@ -130,7 +131,7 @@ final routerProvider = Provider<GoRouter>((ref) {
         builder: (_, state) => AdminShell(
           title: 'Categorías',
           currentRoute: state.matchedLocation,
-          child: const _AdminPlaceholder('Categorías — M8'),
+          child: const CategoriesAdminScreen(),
         ),
       ),
       GoRoute(
